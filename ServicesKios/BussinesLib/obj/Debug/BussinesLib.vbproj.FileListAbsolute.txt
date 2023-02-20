@@ -1,0 +1,8 @@
+F:\KIOS\ServicesKios\BussinesLib\bin\Debug\BussinesLib.dll
+F:\KIOS\ServicesKios\BussinesLib\bin\Debug\BussinesLib.pdb
+F:\KIOS\ServicesKios\BussinesLib\bin\Debug\BussinesLib.xml
+F:\KIOS\ServicesKios\BussinesLib\obj\Debug\BussinesLib.Resources.resources
+F:\KIOS\ServicesKios\BussinesLib\obj\Debug\BussinesLib.vbproj.GenerateResource.Cache
+F:\KIOS\ServicesKios\BussinesLib\obj\Debug\BussinesLib.dll
+F:\KIOS\ServicesKios\BussinesLib\obj\Debug\BussinesLib.xml
+F:\KIOS\ServicesKios\BussinesLib\obj\Debug\BussinesLib.pdb

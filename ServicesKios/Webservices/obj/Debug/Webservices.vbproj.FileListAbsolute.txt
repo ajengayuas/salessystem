@@ -1,0 +1,12 @@
+F:\KIOS\ServicesKios\Webservices\bin\Webservices.dll
+F:\KIOS\ServicesKios\Webservices\bin\Webservices.pdb
+F:\KIOS\ServicesKios\Webservices\bin\Webservices.xml
+F:\KIOS\ServicesKios\Webservices\bin\BussinesLib.dll
+F:\KIOS\ServicesKios\Webservices\bin\BussinesLib.pdb
+F:\KIOS\ServicesKios\Webservices\bin\BussinesLib.xml
+F:\KIOS\ServicesKios\Webservices\obj\Debug\Webservices.vbprojResolveAssemblyReference.cache
+F:\KIOS\ServicesKios\Webservices\obj\Debug\Webservices.Resources.resources
+F:\KIOS\ServicesKios\Webservices\obj\Debug\Webservices.vbproj.GenerateResource.Cache
+F:\KIOS\ServicesKios\Webservices\obj\Debug\Webservices.dll
+F:\KIOS\ServicesKios\Webservices\obj\Debug\Webservices.xml
+F:\KIOS\ServicesKios\Webservices\obj\Debug\Webservices.pdb

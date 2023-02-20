@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{54A79D3E-E2DC-44C9-A30D-46D184DE2FF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProjectKios.My.MyApplication</StartupObject>
+    <RootNamespace>ProjectKios</RootNamespace>
+    <AssemblyName>ProjectKios</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\WebSite\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>id-ID</TargetCulture>
+    <ProductName>Aplikasi Penjualan</ProductName>
+    <PublisherName>ASR</PublisherName>
+    <SuiteName>ASR</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProjectKios.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProjectKios.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B7054EA25D651B6D3D696C97384961020D8E1298</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ProjectKios_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AksesMenu.Designer.vb">
+      <DependentUpon>AksesMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AksesMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepassword.Designer.vb">
+      <DependentUpon>changepassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changepassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="penjualanmanual.Designer.vb">
+      <DependentUpon>penjualanmanual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="penjualanmanual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masteritemmanual.Designer.vb">
+      <DependentUpon>masteritemmanual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="masteritemmanual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formrptkeuangan.Designer.vb">
+      <DependentUpon>formrptkeuangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formrptkeuangan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formrptpengeluaran.Designer.vb">
+      <DependentUpon>formrptpengeluaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formrptpengeluaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reprint.Designer.vb">
+      <DependentUpon>reprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptkeuangan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptkeuangan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptpengeluaran.vb">
+      <DependentUpon>rptpengeluaran.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="formrptreturnout.Designer.vb">
+      <DependentUpon>formrptreturnout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formrptreturnout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formrptstock.Designer.vb">
+      <DependentUpon>formrptstock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formrptstock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptreturnout.vb">
+      <DependentUpon>rptreturnout.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="dsinvoice.vb">
+      <DependentUpon>dsinvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="formrptreturnin.Designer.vb">
+      <DependentUpon>formrptreturnin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formrptreturnin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptreturnin.vb">
+      <DependentUpon>rptreturnin.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="formrptpembelian.Designer.vb">
+      <DependentUpon>formrptpembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formrptpembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="multiitem.Designer.vb">
+      <DependentUpon>multiitem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="multiitem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="returnin.Designer.vb">
+      <DependentUpon>returnin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="returnin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="returnout.Designer.vb">
+      <DependentUpon>returnout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="returnout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dsinvoice.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsinvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="forminvoice.Designer.vb">
+      <DependentUpon>forminvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forminvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="penjualan.Designer.vb">
+      <DependentUpon>penjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="penjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterconsumption.Designer.vb">
+      <DependentUpon>masterconsumption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="masterconsumption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masteritem.Designer.vb">
+      <DependentUpon>masteritem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="masteritem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mastersupplier.Designer.vb">
+      <DependentUpon>mastersupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mastersupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mastersatuan.Designer.vb">
+      <DependentUpon>mastersatuan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mastersatuan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterkategori.Designer.vb">
+      <DependentUpon>masterkategori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="masterkategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="groupakses.Designer.vb">
+      <DependentUpon>groupakses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="groupakses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mastermenu.Designer.vb">
+      <DependentUpon>mastermenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mastermenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pembelian.Designer.vb">
+      <DependentUpon>pembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptinvoice.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptinvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptpembelian.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptpembelian.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptstock1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptstock.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usermanagement.Designer.vb">
+      <DependentUpon>usermanagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usermanagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.vb">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterakses.Designer.vb">
+      <DependentUpon>masterakses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="masterakses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterperusahaan.Designer.vb">
+      <DependentUpon>masterperusahaan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="masterperusahaan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AksesMenu.resx">
+      <DependentUpon>AksesMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepassword.resx">
+      <DependentUpon>changepassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="penjualanmanual.resx">
+      <DependentUpon>penjualanmanual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masteritemmanual.resx">
+      <DependentUpon>masteritemmanual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formrptkeuangan.resx">
+      <DependentUpon>formrptkeuangan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formrptpengeluaran.resx">
+      <DependentUpon>formrptpengeluaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reprint.resx">
+      <DependentUpon>reprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptkeuangan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptkeuangan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptpengeluaran.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptpengeluaran.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formrptreturnout.resx">
+      <DependentUpon>formrptreturnout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formrptstock.resx">
+      <DependentUpon>formrptstock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptreturnout.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptreturnout.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formrptreturnin.resx">
+      <DependentUpon>formrptreturnin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptreturnin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptreturnin.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formrptpembelian.resx">
+      <DependentUpon>formrptpembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="multiitem.resx">
+      <DependentUpon>multiitem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="returnin.resx">
+      <DependentUpon>returnin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="returnout.resx">
+      <DependentUpon>returnout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forminvoice.resx">
+      <DependentUpon>forminvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="penjualan.resx">
+      <DependentUpon>penjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterconsumption.resx">
+      <DependentUpon>masterconsumption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masteritem.resx">
+      <DependentUpon>masteritem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mastersupplier.resx">
+      <DependentUpon>mastersupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mastersatuan.resx">
+      <DependentUpon>mastersatuan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterkategori.resx">
+      <DependentUpon>masterkategori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupakses.resx">
+      <DependentUpon>groupakses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mastermenu.resx">
+      <DependentUpon>mastermenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pembelian.resx">
+      <DependentUpon>pembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptinvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptinvoice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptpembelian.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptpembelian.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptstock.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptstock1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usermanagement.resx">
+      <DependentUpon>usermanagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterakses.resx">
+      <DependentUpon>masterakses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterperusahaan.resx">
+      <DependentUpon>masterperusahaan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="dsinvoice.xsc">
+      <DependentUpon>dsinvoice.xsd</DependentUpon>
+    </None>
+    <None Include="dsinvoice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsinvoice.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsinvoice.xss">
+      <DependentUpon>dsinvoice.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataAkses.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataAksesMenu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataClosing.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataCons.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataInvoice.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.datakodeharga.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.datakonvpcs.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataMasterAkses.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataMasterItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataMasterkategori.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataMasterMenu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataMastersatuan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataMastersupplier.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataPerusahaan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataRptPembelian.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataRptPenjualan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataRptReturnIn.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataRptReturnOut.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataRptStock.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.DataUserMan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.GroupAksesData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListCmbRi.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListCmbRo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListConsJasa.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListDataItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListDatasatuan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListDataStock.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListDataSupplier.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListDataUrutan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListDataUrutanJual.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListDataUrutanRI.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListDataUrutanRO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListIDBeli.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListIDJual.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListisianRI.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListisianRO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.ListNamaKategori.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.QtyRi.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\ProjectKios.ServiceReference1.QtyRo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\WebService11.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit baru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\master data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trans.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trans1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trans copy.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaksi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\WebService11.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
