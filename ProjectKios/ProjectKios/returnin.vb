@@ -214,7 +214,7 @@ Public Class returnin
         Try
             _listUrutan = _mySrv.AmbilListUratanRI(_secure, Format(Date.Now, "yyyy"))
             If _listUrutan.Length = 0 Then
-                txtno.Text = "RI-2021-0000001"
+                txtno.Text = "RI-" & Format(Date.Now, "yyyy") & "-0000001"
             Else
                 Dim counts As Integer = _listUrutan(0).urut.ToString.Count
                 If counts = 1 Then
@@ -232,7 +232,7 @@ Public Class returnin
                 Else
                     _urut = ""
                 End If
-                txtno.Text = _listUrutan(0).kode & "-2021-" & _urut & _listUrutan(0).urut
+                txtno.Text = _listUrutan(0).kode & "-" & Format(Date.Now, "yyyy") & "-" & _urut & _listUrutan(0).urut
             End If
             For i As Integer = 0 To dgvri.Rows.Count - 1
                 Dim nojual As String = dgvri.Rows(i).Cells(0).Value

@@ -348,7 +348,7 @@ Public Class penjualan
             Else
                 _urut = ""
             End If
-            txtno.Text = "JU-2021-" & _urut & _listUrutan(0).urut
+            txtno.Text = "JU-" & Format(Date.Now, "yyyy") & "-" & _urut & _listUrutan(0).urut
         End If
         If e.KeyChar = Convert.ToChar(13) Then
             txtkembali.Text = nudbayar.Value - txtgrand.Text
