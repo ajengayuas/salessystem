@@ -119,7 +119,13 @@ Public Class returnout
             Exit Sub
         End If
         _cekjumlah = _mySrv.AmbilQtyRo(_secure, cmbbeli.Text, cmbitem.Text)
-        Dim selisih As Decimal = txtqty.Text - _cekjumlah(0).jumlahro
+        Dim jmlro As Integer = 0
+        If _cekjumlah.Length = 0 Then
+            jmlro = 0
+        Else
+            jmlro = _cekjumlah(0).jumlahro
+        End If
+        Dim selisih As Decimal = (txtqty.Text * _konv(0).konvpcs) - jmlro
         If nudqty.Value > selisih Then
             MsgBox("Qty Habis di RO!")
             Exit Sub
