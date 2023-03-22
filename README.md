@@ -1,6 +1,6 @@
 ## Sistem Informasi Penjualan
 
-Berikut ini merupakan aplikasi penjualan berbasis desktop, yang mana terdapat fitur-fitur yang flexibel.
+Berikut ini merupakan aplikasi penjualan berbasis desktop dengan webservice, yang mana terdapat fitur-fitur yang flexibel.
 
 <h2>Module Master</h2>
 <p align="center">
